@@ -1,4 +1,4 @@
-root {
+:root {
     --clr-main: #7CB1DD;
     --clr-dark: #722513;
     --clr-accent: #D23836;
@@ -12,15 +12,32 @@ body {
     background-color: var(--white);
 }
 
-header h1 {
+h1 {
     text-align: center;
-    font-size: large;
+    font-size: 10vw;
     color: var(--clr-accent);
-    text-shadow: 2px 2px var(--clr-dark);
+    text-shadow: .25rem .25rem var(--clr-dark);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-dark);
+    font-size: 5vw;
+}
+
+a:hover {
+    color: var(--clr-accent);
+    border-bottom: solid 3px var(--clr-accent);
 }
 
 #hero {
-    height: 25vh;
+    height: 75vh;
     width: auto;
-    background-image: url(./assets/whaler-1961.jpg);
+    background-image: url('./assets/whaler-1961.jpg');
 }
