@@ -2,14 +2,14 @@
     --clr-main: #7CB1DD;
     --clr-dark: #722513;
     --clr-accent: #D23836;
-    --white: #F5F8FD;
+    --grey: #cbdcec;
     --black: #210502;
 }
 
 body {
     margin: 0;
     font-family: 'Josefin Sans', Helvetica, sans-serif;
-    background-color: var(--white);
+    background-color: var(--grey);
 }
 
 h1 {
@@ -29,6 +29,7 @@ a {
     text-decoration: none;
     color: var(--clr-dark);
     font-size: 5vw;
+    border-bottom: solid 3px var(--grey);
 }
 
 a:hover {
@@ -40,4 +41,64 @@ a:hover {
     height: 75vh;
     width: auto;
     background-image: url('./assets/whaler-1961.jpg');
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h2 {
+    text-align: center;
+    font-size: 7vw;
+    color: var(--clr-dark);
+}
+
+.card {
+    border-radius: 5px;
+    margin: 20px;
+    height: 40vw;
+    width: 40vw;
+    box-shadow: 6px 6px var(--clr-dark);
+}
+
+#a {
+    background-image: url(./assets/a.jpg);
+    background-size: cover;
+}
+
+#a:hover::after {
+    content: '$18,000';
+    background-color: var(--clr-main);
+    padding: 5px;
+    font-size: 4vw;
+}
+
+#b {
+    background-image: url(./assets/b.jpg);
+    background-size: cover;
+}
+
+#b:hover::after {
+    content: '$21,000';
+    background-color: var(--clr-main);
+    padding: 5px;
+    font-size: 4vw;
+}
+
+#c {
+    background-image: url(./assets/c.jpg);
+    background-size: cover;
+}
+
+#c:hover::after {
+    content: '$19,500';
+    background-color: var(--clr-main);
+    padding: 5px;
+    font-size: 4vw;
+}
+
+#about {
+    margin: 20px 20px;
 }
