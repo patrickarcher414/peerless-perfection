@@ -1,0 +1,26 @@
+root {
+    --clr-main: #7CB1DD;
+    --clr-dark: #722513;
+    --clr-accent: #D23836;
+    --white: #F5F8FD;
+    --black: #210502;
+}
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    background-color: var(--white);
+}
+
+header h1 {
+    text-align: center;
+    font-size: large;
+    color: var(--clr-accent);
+    text-shadow: 2px 2px var(--clr-dark);
+}
+
+#hero {
+    height: 25vh;
+    width: auto;
+    background-image: url(./assets/whaler-1961.jpg);
+}
