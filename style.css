@@ -2,7 +2,7 @@
     --clr-main: #7CB1DD;
     --clr-dark: #722513;
     --clr-accent: #D23836;
-    --grey: #cbdcec;
+    --grey: #d9e7f3;
     --black: #210502;
 }
 
@@ -101,4 +101,8 @@ h2 {
 
 #about {
     margin: 20px 20px;
+}
+
+p {
+    font-size: 2vw;
 }
